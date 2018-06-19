@@ -7,12 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <!--Using "http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js" for angularJs CDN-->
-    <script src="http://ajaxgoogleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
 </head>
+
 <body>
-    
+<!--The code below demonstrates what happens to components that don't use ng-app directive. They won't run. ng-app applies to it's parent div and child elements of that div, nothing else.-->
 
+Outside Name: {{name}}
 
-    
+<div ng-app="" ng-init="name='Chris Haralson'">
+
+<p>Your Name: {{name}}</p>
+
+</div>
+
+Outside Name: {{name}}
+
 </body>
+
 </html>
