@@ -1,0 +1,3 @@
+# angularJsSamples
+These are AngularJs Samples of commonly used cases, services, directives, controllers, etc....
+Please feel free to copy, change, redistribute at your leisure.
