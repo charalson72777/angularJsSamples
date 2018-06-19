@@ -10,7 +10,20 @@
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
     <!--ng app example with ng app directive-->
 </head>
-<script type="text/javascript">
+
+<body>
+
+<!--with ng app directive-->
+My Name: {{name}}
+<div ng-app="" ng-init="name='Chris Haralson'">
+    <p>My Name: {{name}}</p>
+</div>
+
+My Name: {{name}}
+
+
+</body>
+<!-- <script type="text/javascript">
 var app = angular.module('angularSample', []);
 </script>
 
@@ -28,6 +41,6 @@ My Name is: {{name}}
 
 My Name is: {{name}}
 
-</body>
+</body> -->
 
 </html>
