@@ -8,18 +8,23 @@
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <!--Using "http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js" for angularJs CDN-->
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-    <!--ng app example with ng app directive-->
+    <!--ng app example with multiple values displayed-->
 </head>
 
 <body>
 
+        <div ng-app="" ng-init="msgA='Hi';msgB='My name is Chris'; msgC='I love to write code'">
+
+                <p>{{msgA}}, {{msgB}}, {{msgC}}</p>
+
+
 <!--with ng app directive-->
-My Name: {{name}}
+<!-- My Name: {{name}}
 <div ng-app="" ng-init="name='Chris Haralson'">
     <p>My Name: {{name}}</p>
 </div>
 
-My Name: {{name}}
+My Name: {{name}} -->
 
 
 </body>
