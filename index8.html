@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AngularJS Samples</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <!--Using "http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js" for angularJs CDN-->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <!--ng-show and ng-hide Directive-->
+</head>
+<script>
+
+        var app = angular.module("angularShowHideApp", []);
+        
+        app.controller('showHideCtrl', function ($scope) {
+        $scope.showval = true; 
+        $scope.hideval = false;
+        $scope.isShowHide = function (param) {
+        
+        if (param == "show") {
+        $scope.showval = true;
+        $scope.hideval = true;
+        }
+        
+        else if (param == "hide") {
+        $scope.showval = false; 
+        $scope.hideval = false;
+        }
+        
+        else {
+        
+        $scope.showval = true;
+        
+        $scope.hideval = false; 
+        }
+        }
+        });
+        
+        </script>
+<body ng-app="angularShowHideApp">
+        <div ng-controller="showHideCtrl">
+        Enter Name to Display :
+        <input type="button" ng-click="isShowHide('show')" value="Show Text"> <input type="button" ng-click="isShowHide('hide')" value="Hide Text">
+        <br />
+        <!--Show Div Based on showval-->
+        <div ng-show="showval">Show Text: I will Appear on Show Click</div><br />
+        <!--Hide Div Based on showval-->
+        <div ng-hide="hideval">Hide Text: I will Appear on Hide Click</div>
+        </div>
+        </body>
+</html>
