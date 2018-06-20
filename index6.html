@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AngularJS Samples</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <!--Using "http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js" for angularJs CDN-->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <!--ng-rpeat Directive-->
+</head>
+<script>
+var app = angular.module("angularBinding", []);
+app.controller("angularBinding", function($scope) {
+$scope.name="";
+});
+</script>
+<body ng-app="angularBinding">
+<div ng-controller="angularBinding">
+    Enter Name to show up:
+    <input type="text" ng-model="name"><br /> You entered: <span ng-bind="name"></span>
+</div>
+</body>
+
+<!-- div ng-app="" syntax>
+    Type name you want to show up here:
+    <input type="text" ng-model="name">
+    You entered: <span ng-bind="name"></span>
+</div> -->
+
+</html>
