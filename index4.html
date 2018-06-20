@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AngularJS Samples</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <!--Using "http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js" for angularJs CDN-->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <!--ng-model Directive, sum of two numbers-->
+</head>
+
+<body>
+
+    <div ng-app="">
+        Please enter a number:<input type="number" ng-model="num1"/><br />
+        Please enter another number: <input type="number" ng-model="num2"/><br />
+        <p>The sum of your numbers is: {{num1 + num2}}</p>
+    </div>
+
+
+</body>
+
+</html>
